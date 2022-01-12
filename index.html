@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <title>Expense_Tracker</title>
+</head>
+<body>
+    <div class="app">
+    <h1>Expense Tracker</h1>
+    <div class="balance_container">
+        <h2>Your Balance</h2>
+        <div id="balance">$1000</div>
+    </div>
+    <div class="cashflow_container">
+        <div class="income_container">
+            <h2>Income</h2>
+            <div id="income">$1200</div>
+        </div>
+        <div class="expense_container">
+            <h2>Expense</h2>
+            <div id="expense">$200</div>
+        </div>
+    </div>
+    <div class="transaction_container">
+        <h2>Transaction_History</h2>
+        <ul id="transaction">
+        </ul>
+    </div>
+    <div class="form_container">
+        <h2>Add New Transaction</h2>
+        <form onsubmit="return false">
+            <label for="name">Name</label>
+            <input id="name" type="text">
+            <label for="amount">Amount</label>
+            <input id="amount" type="number">
+            <button id="income_btn">Add Income</button>
+            <button id="expense_btn">Add Expense</button>
+        </form>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
